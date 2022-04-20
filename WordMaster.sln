@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordMaster", "WordMaster\WordMaster.csproj", "{AE10CD7D-81F4-4DCE-B77B-55F2CA4796A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{29F4B0AF-1312-44C0-A5C8-378AB9A48D50}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE10CD7D-81F4-4DCE-B77B-55F2CA4796A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE10CD7D-81F4-4DCE-B77B-55F2CA4796A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE10CD7D-81F4-4DCE-B77B-55F2CA4796A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE10CD7D-81F4-4DCE-B77B-55F2CA4796A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29F4B0AF-1312-44C0-A5C8-378AB9A48D50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29F4B0AF-1312-44C0-A5C8-378AB9A48D50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29F4B0AF-1312-44C0-A5C8-378AB9A48D50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29F4B0AF-1312-44C0-A5C8-378AB9A48D50}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5A5DD51-196E-472A-8997-D51C118F8A8D}
+	EndGlobalSection
+EndGlobal
