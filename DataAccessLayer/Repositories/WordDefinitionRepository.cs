@@ -8,38 +8,37 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Repositories
 {
-    public class WordMeaningRepository: IWordMeaningRepository
+    public class WordDefinitionRepository : IWordDefinitionRepository
     {
         WordMasterDbContext _context;
-        public WordMeaningRepository (WordMasterDbContext context)
+        public WordDefinitionRepository(WordMasterDbContext context)
         {
             _context = context;
         }
-
-        public void Add(WordMeaning entity)
+        public void Add(WordDefinition entity)
         {
-            _context.Set<WordMeaning>().Add(entity);
+            _context.Set<WordDefinition>().Add(entity);
             _context.SaveChanges();
         }
 
         public void Delete(int id)
         {
             var silinecek = GetById(id);
-            _context.Set<WordMeaning>().Remove(silinecek);
+            _context.Set<WordDefinition>().Remove(silinecek);
             _context.SaveChanges();
         }
 
-        public WordMeaning GetById(int id)
+        public WordDefinition GetById(int id)
         {
-            return _context.Set<WordMeaning>().Find(id);
+            return _context.Set<WordDefinition>().Find(id);
         }
 
-        public List<WordMeaning> List()
+        public List<WordDefinition> List()
         {
-            return _context.Set<WordMeaning>().ToList();
+            return _context.Set<WordDefinition>().ToList();
         }
 
-        public void Update(WordMeaning entity)
+        public void Update(WordDefinition entity)
         {
             _context.Attach(entity);
             _context.Entry(entity).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
